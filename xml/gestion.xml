@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE gestion SYSTEM "gestion.dtd">
+<gestion>
+	<cinemas>
+		<cinema id="idcinema1">
+			<nom>Pathe Belfort</nom>
+			<adresse>
+				<numero>1</numero>
+				<rue>Boulevard Richelieu</rue>
+				<cp>90000</cp>
+				<ville>Belfort</ville>				
+			</adresse>
+			<localisation>local</localisation>
+			<latlng>
+				<lat>47.6307263</lat>
+				<lng>6.8593849</lng>			
+			</latlng>
+			<films>
+				<film>
+					<titre>titanic</titre>
+					<realisateur>machin</realisateur>
+					<genre>amoureux</genre>
+					<acteurs>
+						<acteur>oublie</acteur>
+					</acteurs>
+					<note>8</note>
+					<commentaires>
+						<commentaire>rien</commentaire>
+					</commentaires>
+					<duree>2</duree>
+					<photo></photo>
+					<seances>
+						<seance>
+							<date>30/05/2016</date>
+							<heureDebut>14</heureDebut>
+							<nbplaces>200</nbplaces>
+						</seance>
+					</seances>
+				</film>
+			</films>
+		</cinema>
+		
+		
+		
+		<cinema id="idcinema2">
+			<nom>UGC Cine Cite</nom>
+			<adresse>
+				<numero>25</numero>
+				<rue>Route du Rhin</rue>
+				<cp>67100</cp>
+				<ville>Strasbourg</ville>				
+			</adresse>
+			<localisation>local</localisation>
+			<latlng>
+				<lat>48.572594</lat>
+				<lng>7.766130</lng>			
+			</latlng>
+			<films>
+				<film>
+					<titre>titanic</titre>
+					<realisateur>machin</realisateur>
+					<genre>amoureux</genre>
+					<acteurs>
+						<acteur>oublie</acteur>
+					</acteurs>
+					<note>8</note>
+					<commentaires>
+						<commentaire>rien</commentaire>
+					</commentaires>
+					<duree>2</duree>
+					<photo></photo>
+					<seances>
+						<seance>
+							<date>30/05/2016</date>
+							<heureDebut>14</heureDebut>
+							<nbplaces>200</nbplaces>
+						</seance>
+					</seances>
+				</film>
+			</films>
+		</cinema>
+		
+		
+	</cinemas>
+	<clients>
+		<client id="idclient1">
+			<cin></cin>
+			<nom></nom>
+			<prenom></prenom>
+			<adresse_complet></adresse_complet>
+			<mail></mail>
+			<sexe></sexe>
+		</client>
+	</clients>
+	<comptes>
+		<compte id="idclient1">
+			<pseudo>khomri</pseudo>
+			<password>tcf</password>
+			<mail>khalil@hotmail.fr</mail>
+			<img>rien</img>
+		</compte>
+		<compte id="idclient1">
+			<pseudo>khomri</pseudo>
+			<password>tcf</password>
+			<mail>khalil@hotmail.fr</mail>
+			<img>rien</img>
+		</compte>
+	</comptes>
+	<reservations>
+		<reservation id="idreservation12" id_client="idclient1">
+			<id_cinema></id_cinema>
+			<titre_film></titre_film>
+			<date_diffusion></date_diffusion>
+			<heure></heure>
+		</reservation>
+	</reservations>
+</gestion>

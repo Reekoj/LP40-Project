@@ -19,7 +19,7 @@ function initMap() {
 }
 
 function drop(positions) {
-  clearMarkers();
+  //clearMarkers();
   for (var i = 0; i < positions.length; i++) {
 	  addMarkerInfoWindowWithTimeout(positions[i],contents[i], i * 2000); 
   }
@@ -27,10 +27,8 @@ function drop(positions) {
 
 function addMarkerInfoWindowWithTimeout(position,content, timeout) {
   window.setTimeout(function() {
-		console.log(JSON.parse(position))
-console.log("jj")
 	var marker=new google.maps.Marker({
-	      position: position,
+	      position: { lat: parseFloat(position.lat), lng: parseFloat(position.lng) },
 	      map: map,
 	      animation: google.maps.Animation.DROP,
 	      icon : {          

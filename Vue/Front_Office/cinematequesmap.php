@@ -15,13 +15,16 @@ width:27%;
 height:100%;
 }
 </style>
-    </head>
+    </head>	 
     <script type="text/javascript">
+			var positions=<?php echo json_encode($positions)?>;
+	</script>
+    
+	 <body onload="execute(positions);" class="acceuil"> 
 
- kkk=[{lat:"44",lng:"6"},{lat:"44",lng:"7"}];
-</script>
-	 <body onload="execute(<?php echo $positions?>);" class="acceuil"> 
     	<?php
+    	
+    	//print_r(geoip_record_by_name('php.net'));
             if(session_id() == "")
                 session_start();            
         ?>

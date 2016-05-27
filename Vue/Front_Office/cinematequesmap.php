@@ -23,8 +23,6 @@ height:100%;
 	 <body onload="execute(positions);" class="acceuil"> 
 
     	<?php
-    	
-    	//print_r(geoip_record_by_name('php.net'));
             if(session_id() == "")
                 session_start();            
         ?>

@@ -13,14 +13,10 @@ function CitySearchWeatherAjax(citySearchWeather){
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
 			document.getElementById("tabmeteo").innerHTML = xhr.responseText;
-			document.getElementById("citymap").innerHTML = citySearchWeather;
-			
+			document.getElementById("citymap").innerHTML = citySearchWeather;	
 		} 
 	  };
 	xhr.open("POST", "require/Citysearchweather.php", true);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send("city="+citySearchWeather);
-	
-	
-	console.log(xhr.responseText);
 }

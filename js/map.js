@@ -1,13 +1,17 @@
 /**
  * 
  */
-var contents =["<div class='infoWindow'>Pathé Belfort</div>","<div class='infoWindow'><img alt=\"qsd\" class=\"ii\"  align=\"left\"border=\"0\" src=\"img/pathe.jpg\">UGC Ciné Cité Strasbourg</div>","<div class='infoWindow'>Pathé Belfort</div>","<div class='infoWindow'>Pathé Belfort</div>"];
+//var contents =["<div class='infoWindow'>Pathé Belfort</div>","<div class='infoWindow'><img alt=\"qsd\" class=\"ii\"  align=\"left\"border=\"0\" src=\"img/pathe.jpg\">UGC Ciné Cité Strasbourg</div>","<div class='infoWindow'>Pathé Belfort</div>","<div class='infoWindow'>Pathé Belfort</div>"];
 var infoWindows = [];
 var markers = [];
 var map;
-function execute(positions){
+function execute(positions,nomscinemas,imgscinemas){
+	var contents = [];
+	for (var i = 0; i < nomscinemas.length; i++) {
+		contents[i]='<div class="infoWindow"><img alt="qsd" class="ii"  align="left" border="0" src="'+imgscinemas[i]+'">'+nomscinemas[i]+'</div>'; 
+	  }
 	initMap();
-	drop(positions);
+	addMarkers(positions,contents);
 }
 function initMap() {
 	var latlng = new google.maps.LatLng(46.7245765,4.0021249);
@@ -18,7 +22,7 @@ function initMap() {
   });
 }
 
-function drop(positions) {
+function addMarkers(positions,contents) {
   //clearMarkers();
   for (var i = 0; i < positions.length; i++) {
 	  addMarkerInfoWindowWithTimeout(positions[i],contents[i], i * 2000); 

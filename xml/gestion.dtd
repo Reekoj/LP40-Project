@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!ELEMENT gestion (cinemas,clients,comptes,reservations)>
 	<!ELEMENT cinemas (cinema)+>
-		<!ELEMENT cinema (nom,adresse,localisation,latlng,films)>
+		<!ELEMENT cinema (nom_cinema,adresse,localisation,latlng,img_path,films)>
 			<!ATTLIST cinema id ID #REQUIRED>
 			<!ELEMENT nom_cinema (#PCDATA)>
 			<!ELEMENT adresse (numero?,rue?,cp,ville)>
@@ -13,6 +13,7 @@
 			<!ELEMENT latlng (lat,lng)>
 				<!ELEMENT lat (#PCDATA)>
 				<!ELEMENT lng (#PCDATA)>
+			<!ELEMENT img_path (#PCDATA)>
 			<!ELEMENT films (film)>
 				<!ELEMENT film (titre,realisateur,genre,acteurs,note,commentaires,duree,photo,seances)>
 					<!ELEMENT titre (#PCDATA)>
@@ -53,4 +54,4 @@
 			<!ELEMENT id_cinema (#PCDATA)>
 			<!ELEMENT titre_film (#PCDATA)>
 			<!ELEMENT date_diffusion (#PCDATA)>
-			<!ELEMENT heure (#PCDATA)>	 
+			<!ELEMENT heure (#PCDATA)>

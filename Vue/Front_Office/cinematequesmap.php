@@ -18,13 +18,16 @@ height:100%;
     </head>	 
     <script type="text/javascript">
 			var positions=<?php echo json_encode($positions)?>;
+			var nomscinemas=<?php echo json_encode($nomscinemas)?>;
+			var imgscinemas=<?php echo json_encode($imgscinemas)?>;
 	</script>
     
-	 <body onload="execute(positions);" class="acceuil"> 
+	 <body onload="execute(positions,nomscinemas,imgscinemas);" class="acceuil"> 
 
     	<?php
             if(session_id() == "")
-                session_start();            
+                session_start();         
+            require_once 'require/Twitterhashtag.php';
         ?>
         <div id="cheader2">
             <div id="corps">

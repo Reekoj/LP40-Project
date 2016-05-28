@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+/*--------------Debut Dynamique map--------------*/
 #cheader2{
     background-color: rgba(255, 255, 255,1);
     border-radius: 50px;
@@ -10,3 +11,31 @@
     min-height: 600px;
     border-radius: 50px;
 }
+/*--------------Fin Dynamique map--------------*/
+/*--------------Debut Twitter hashtag--------------*/
+#twitteraside {
+	margin: 10px;
+	padding: 5px;
+	width: 30%;
+	height: 400px;
+	float: left;
+	border: solid rgba(0, 0, 0, 0.2);
+	
+}
+#twitterdiv {
+	width: 100%;
+	height: 90%;
+	overflow: scroll;
+}
+.imgtweet{
+float: left;
+position : relative;
+
+}
+.linetweet{
+	color: rgba(0, 0, 0, 0.2);
+}
+a:link, a:visited {
+    color: blue;
+}
+/*--------------Fin Twitter hashtag--------------*/

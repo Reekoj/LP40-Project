@@ -3,7 +3,7 @@
 <gestion>
 	<cinemas>
 		<cinema id="idcinema1">
-			<nom>Pathe Belfort</nom>
+			<nom_cinema>Pathe Belfort</nom_cinema>
 			<adresse>
 				<numero>1</numero>
 				<rue>Boulevard Richelieu</rue>
@@ -15,6 +15,7 @@
 				<lat>47.6307263</lat>
 				<lng>6.8593849</lng>			
 			</latlng>
+			<img_path>img/pathe.jpg</img_path>
 			<films>
 				<film>
 					<titre>titanic</titre>
@@ -43,7 +44,7 @@
 		
 		
 		<cinema id="idcinema2">
-			<nom>UGC Cine Cite</nom>
+			<nom_cinema>UGC Cine Cite</nom_cinema>
 			<adresse>
 				<numero>25</numero>
 				<rue>Route du Rhin</rue>
@@ -55,6 +56,7 @@
 				<lat>48.572594</lat>
 				<lng>7.766130</lng>			
 			</latlng>
+			<img_path>img/pathe.jpg</img_path>
 			<films>
 				<film>
 					<titre>titanic</titre>

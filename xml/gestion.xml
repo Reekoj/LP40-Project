@@ -2,20 +2,21 @@
 <!DOCTYPE gestion SYSTEM "gestion.dtd">
 <gestion>
 	<cinemas>
-		<cinema id="idcinema1">
-			<nom_cinema>Pathe Belfort</nom_cinema>
+		<cinema>
+			<id>idCine1</id>
+			<nom_cinema>Mégarama Lumina</nom_cinema>
 			<adresse>
-				<numero>1</numero>
-				<rue>Boulevard Richelieu</rue>
-				<cp>90000</cp>
-				<ville>Belfort</ville>				
+				<numero>12</numero>
+				<rue>Boulevard Moïse Foglia</rue>
+				<cp>25400</cp>
+				<ville>Audincourt</ville>				
 			</adresse>
 			<localisation>local</localisation>
 			<latlng>
-				<lat>47.6307263</lat>
-				<lng>6.8593849</lng>			
+				<lat>47.4898608</lat>
+				<lng>6.8365683</lng>			
 			</latlng>
-			<img_path>img/pathe.jpg</img_path>
+			<img_path>/img/megarama/megarama.png</img_path>
 			<films>
 				<film>
 					<titre>titanic</titre>
@@ -29,7 +30,28 @@
 						<commentaire>rien</commentaire>
 					</commentaires>
 					<duree>2</duree>
-					<photo></photo>
+					<photo>/img/megarama/titanic.jpg</photo>
+					<seances>
+						<seance>
+							<date>30/05/2016</date>
+							<heureDebut>14</heureDebut>
+							<nbplaces>200</nbplaces>
+						</seance>
+					</seances>
+				</film>
+				<film>
+					<titre>tarzan</titre>
+					<realisateur>bsqdfkjsdnf</realisateur>
+					<genre>aventure</genre>
+					<acteurs>
+						<acteur>pete mitchell</acteur>
+					</acteurs>
+					<note>5</note>
+					<commentaires>
+						<commentaire>pas mal</commentaire>
+					</commentaires>
+					<duree>2</duree>
+					<photo>/img/megarama/tarzan.jpg</photo>
 					<seances>
 						<seance>
 							<date>30/05/2016</date>
@@ -40,10 +62,8 @@
 				</film>
 			</films>
 		</cinema>
-		
-		
-		
-		<cinema id="idcinema2">
+		<cinema>
+			<id>idCine2</id>
 			<nom_cinema>UGC Cine Cite</nom_cinema>
 			<adresse>
 				<numero>25</numero>
@@ -56,7 +76,7 @@
 				<lat>48.572594</lat>
 				<lng>7.766130</lng>			
 			</latlng>
-			<img_path>img/pathe.jpg</img_path>
+			<img_path>/img/pathe.jpg</img_path>
 			<films>
 				<film>
 					<titre>titanic</titre>
@@ -81,8 +101,45 @@
 				</film>
 			</films>
 		</cinema>
-		
-		
+		<cinema>
+			<id>idCine3</id>
+			<nom_cinema>Cinéma des quais</nom_cinema>
+			<adresse>
+				<numero>1</numero>
+				<rue>Boulevard Richelieu</rue>
+				<cp>90000</cp>
+				<ville>Belfort</ville>				
+			</adresse>
+			<localisation>local</localisation>
+			<latlng>
+				<lat>47.6307227</lat>
+				<lng>6.8593902</lng>			
+			</latlng>
+			<img_path>/img/pathe.jpg</img_path>
+			<films>
+				<film>
+					<titre>titanic</titre>
+					<realisateur>machin</realisateur>
+					<genre>amoureux</genre>
+					<acteurs>
+						<acteur>oublie</acteur>
+					</acteurs>
+					<note>8</note>
+					<commentaires>
+						<commentaire>rien</commentaire>
+					</commentaires>
+					<duree>2</duree>
+					<photo></photo>
+					<seances>
+						<seance>
+							<date>30/05/2016</date>
+							<heureDebut>14</heureDebut>
+							<nbplaces>200</nbplaces>
+						</seance>
+					</seances>
+				</film>
+			</films>
+		</cinema>
 	</cinemas>
 	<clients>
 		<client id="idclient1">

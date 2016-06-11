@@ -1,5 +1,5 @@
 <?php
-header ( 'Content-Type: text/html; charset=utf-8' );
+//header ( 'Content-Type: text/html; charset=utf-8' );
 
 require_once ('TwitterAPIExchange.php');
 require_once ('time.php');
@@ -20,7 +20,7 @@ $twitter = new TwitterAPIExchange ( $settings );
 $strJson = $twitter->setGetfield ( $getfield )->buildOauth ( $url, $requestMethod )->performRequest ();
 $arrTweets = json_decode ( $strJson, true );
 $cptline = 0;
-echo '<aside id="twitteraside"><div align="center"><a target=\"_new\" href="http://twitter.com"><img src="img/Twitterhashtag.svg.png" /></a></div><div id="twitterdiv">';
+echo '<aside id="twitteraside"><div class="tweethead" align="center"><a target=\"_new\" href="http://twitter.com"><img src="img/Twitterhashtag.svg.png" /></a></div><div id="twitterdiv">';
 foreach ( $arrTweets ["statuses"] as $tweet ) {
 	$cptline ++;
 	$date = $tweet ['created_at'];

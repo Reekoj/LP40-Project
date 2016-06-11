@@ -5,10 +5,10 @@
 var infoWindows = [];
 var markers = [];
 var map;
-function execute(positions,nomscinemas,imgscinemas){
+function execute(positions,nomscinemas,imgscinemas,idcinemas){
 	var contents = [];
 	for (var i = 0; i < nomscinemas.length; i++) {
-		contents[i]='<div class="infoWindow"><img alt="qsd" class="ii"  align="left" border="0" src="'+imgscinemas[i]+'">'+nomscinemas[i]+'</div>'; 
+		contents[i]='<div class="infoWindow"><img alt="qsd" class="ii"  align="left" border="0" src="'+imgscinemas[i]+'"><a href="index.php?section=infocin&id_cinema='+idcinemas[i]+'">'+nomscinemas[i]+'</a></div>'; 
 	  }
 	initMap();
 	addMarkers(positions,contents);

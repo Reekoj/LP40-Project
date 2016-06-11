@@ -6,9 +6,8 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="js/map.js"></script>
-        <title>Voiture</title>
+        <title>Cinematheque</title>
      <style type="text/css">
-
 .ii{
 position : relative;
 width:27%;
@@ -20,14 +19,15 @@ height:100%;
 			var positions=<?php echo json_encode($positions)?>;
 			var nomscinemas=<?php echo json_encode($nomscinemas)?>;
 			var imgscinemas=<?php echo json_encode($imgscinemas)?>;
+			var idcinemas = <?php echo json_encode($idcinemas)?>;
 	</script>
     
-	 <body onload="execute(positions,nomscinemas,imgscinemas);" class="acceuil"> 
+	 <body onload="execute(positions,nomscinemas,imgscinemas,idcinemas);" class="centrage"> 
 
     	<?php
-            if(session_id() == "")
-                session_start();         
-            require_once 'require/Twitterhashtag.php';
+                if(session_id() == "")
+                session_start();
+                require 'require/menu.php';
         ?>
         <div id="cheader2">
             <div id="corps">
@@ -36,6 +36,6 @@ height:100%;
 	
         </div>
     </div>
-		
+		<?php require 'require/footer.php';?>
 	</body>
 </html>

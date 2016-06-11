@@ -2,23 +2,22 @@
 <!DOCTYPE gestion SYSTEM "gestion.dtd">
 <gestion>
 	<cinemas>
-		<cinema>
-			<id>idCine1</id>
-			<nom_cinema>Mégarama Lumina</nom_cinema>
+		<cinema id="idcinema1">
+			<nom_cinema>Pathe Belfort</nom_cinema>
 			<adresse>
-				<numero>12</numero>
-				<rue>Boulevard Moïse Foglia</rue>
-				<cp>25400</cp>
-				<ville>Audincourt</ville>				
+				<numero>1</numero>
+				<rue>Boulevard Richelieu</rue>
+				<cp>90000</cp>
+				<ville>Belfort</ville>				
 			</adresse>
-			<localisation>local</localisation>
+			<localisation>47.6307263,6.8593849&amp;zoom=12&amp;size=500x350</localisation>
 			<latlng>
-				<lat>47.4898608</lat>
-				<lng>6.8365683</lng>			
+				<lat>47.6307263</lat>
+				<lng>6.8593849</lng>			
 			</latlng>
-			<img_path>/img/megarama/megarama.png</img_path>
+			<img_path>img/cinemas/cinema_1.jpg</img_path>
 			<films>
-				<film>
+				<film id="idcinema1idfilm1">
 					<titre>titanic</titre>
 					<realisateur>machin</realisateur>
 					<genre>amoureux</genre>
@@ -26,44 +25,20 @@
 						<acteur>oublie</acteur>
 					</acteurs>
 					<note>8</note>
-					<commentaires>
-						<commentaire>rien</commentaire>
-					</commentaires>
 					<duree>2</duree>
-					<photo>/img/megarama/titanic.jpg</photo>
+					<photo/>
+					<date_sortie>2016/02/01</date_sortie>
 					<seances>
 						<seance>
-							<date>30/05/2016</date>
+							<date>2016/02/20</date>
 							<heureDebut>14</heureDebut>
-							<nbplaces>200</nbplaces>
+							<nbplaces>2</nbplaces>
 						</seance>
 					</seances>
 				</film>
-				<film>
-					<titre>tarzan</titre>
-					<realisateur>bsqdfkjsdnf</realisateur>
-					<genre>aventure</genre>
-					<acteurs>
-						<acteur>pete mitchell</acteur>
-					</acteurs>
-					<note>5</note>
-					<commentaires>
-						<commentaire>pas mal</commentaire>
-					</commentaires>
-					<duree>2</duree>
-					<photo>/img/megarama/tarzan.jpg</photo>
-					<seances>
-						<seance>
-							<date>30/05/2016</date>
-							<heureDebut>14</heureDebut>
-							<nbplaces>200</nbplaces>
-						</seance>
-					</seances>
-				</film>
-			</films>
+			<film id="idcinema1idfilm2"><titre>titre</titre><realisateur>realisateur</realisateur><genre>genre</genre><acteurs><acteur>act</acteur><acteur>act2</acteur><acteur>act3</acteur><acteur>act4</acteur></acteurs><note>9</note><duree>2</duree><photo>img/films/film_3.png</photo><date_sortie>2016/12/03</date_sortie><seances><seance><date>02-05-2009</date><heureDebut>14</heureDebut><nbplaces>200</nbplaces></seance><seance><date>02-05-2009</date><heureDebut>15</heureDebut><nbplaces>205</nbplaces></seance></seances></film><film id="idcinema1idfilm3"><titre>Risala</titre><realisateur>masr</realisateur><genre>religieux</genre><acteurs><acteur>najib</acteur><acteur>samir</acteur></acteurs><note>10</note><duree>2</duree><photo>img/films/film_film.png</photo><date_sortie>2017/12/31</date_sortie><seances><seance><date>2018/02/05</date><heureDebut>14</heureDebut><nbplaces>4</nbplaces></seance><seance><date>2017/12/31</date><heureDebut>18</heureDebut><nbplaces>15</nbplaces></seance></seances></film></films>
 		</cinema>
-		<cinema>
-			<id>idCine2</id>
+		<cinema id="idcinema2">
 			<nom_cinema>UGC Cine Cite</nom_cinema>
 			<adresse>
 				<numero>25</numero>
@@ -71,14 +46,14 @@
 				<cp>67100</cp>
 				<ville>Strasbourg</ville>				
 			</adresse>
-			<localisation>local</localisation>
+			<localisation>center=48.572594,7.766130&amp;zoom=12&amp;size=400x400</localisation>
 			<latlng>
 				<lat>48.572594</lat>
 				<lng>7.766130</lng>			
 			</latlng>
-			<img_path>/img/pathe.jpg</img_path>
+			<img_path>img/cinemas/cinema_2.jpg</img_path>
 			<films>
-				<film>
+				<film id="idcinema2idfilm1">
 					<titre>titanic</titre>
 					<realisateur>machin</realisateur>
 					<genre>amoureux</genre>
@@ -86,11 +61,9 @@
 						<acteur>oublie</acteur>
 					</acteurs>
 					<note>8</note>
-					<commentaires>
-						<commentaire>rien</commentaire>
-					</commentaires>
 					<duree>2</duree>
-					<photo></photo>
+					<photo/>
+					<date_sortie>2016/12/30</date_sortie>
 					<seances>
 						<seance>
 							<date>30/05/2016</date>
@@ -101,76 +74,32 @@
 				</film>
 			</films>
 		</cinema>
-		<cinema>
-			<id>idCine3</id>
-			<nom_cinema>Cinéma des quais</nom_cinema>
-			<adresse>
-				<numero>1</numero>
-				<rue>Boulevard Richelieu</rue>
-				<cp>90000</cp>
-				<ville>Belfort</ville>				
-			</adresse>
-			<localisation>local</localisation>
-			<latlng>
-				<lat>47.6307227</lat>
-				<lng>6.8593902</lng>			
-			</latlng>
-			<img_path>/img/pathe.jpg</img_path>
-			<films>
-				<film>
-					<titre>titanic</titre>
-					<realisateur>machin</realisateur>
-					<genre>amoureux</genre>
-					<acteurs>
-						<acteur>oublie</acteur>
-					</acteurs>
-					<note>8</note>
-					<commentaires>
-						<commentaire>rien</commentaire>
-					</commentaires>
-					<duree>2</duree>
-					<photo></photo>
-					<seances>
-						<seance>
-							<date>30/05/2016</date>
-							<heureDebut>14</heureDebut>
-							<nbplaces>200</nbplaces>
-						</seance>
-					</seances>
-				</film>
-			</films>
-		</cinema>
-	</cinemas>
+	<cinema id="idcinema3"><nom_cinema>UGC Cine Cite Les Halles</nom_cinema><adresse><numero>101</numero><rue>Rue Berger</rue><cp>75001</cp><ville>Paris</ville></adresse><localisation>center=48.8621875,2.3522219000000177&amp;zoom=12&amp;size=400x400</localisation><latlng><lat>48.8621875</lat><lng>2.3522219000000177</lng></latlng><img_path>img/cinemas/cinema_3.png</img_path></cinema><cinema id="idcinema4"><nom_cinema>thakafa</nom_cinema><adresse><numero>2</numero><rue>snit</rue><cp>1210</cp><ville>thala</ville></adresse><localisation>47.6307263,6.8593849&amp;zoom=12&amp;size=500x350</localisation><latlng><lat>48.8621875</lat><lng>2.3522219000000177</lng></latlng><img_path>img/cinemas/cinema_cinema.png</img_path><films><film id="idcinema4idfilm1"><titre>kalakala</titre><realisateur>masr</realisateur><genre>dramatique</genre><acteurs><acteur>abou isam</acteur><acteur>samir</acteur></acteurs><note>10</note><duree>2</duree><photo>img/films/film_cinemafilm.png</photo><date_sortie>2018/12/31</date_sortie><seances><seance><date>2016/02/20</date><heureDebut>14</heureDebut><nbplaces>4</nbplaces></seance><seance><date>2017/12/31</date><heureDebut>18</heureDebut><nbplaces>15</nbplaces></seance></seances></film></films></cinema></cinemas>
 	<clients>
 		<client id="idclient1">
-			<cin></cin>
-			<nom></nom>
-			<prenom></prenom>
-			<adresse_complet></adresse_complet>
-			<mail></mail>
-			<sexe></sexe>
+			<cin>12649287</cin>
+			<nom>khalil</nom>
+			<prenom>homri</prenom>
+			<adresse_complet> snit thala</adresse_complet>
+			<mail>khalil.homri@utbm.fr</mail>
+			<sexe>M</sexe>
 		</client>
-	</clients>
+	<client id="idclient2"><cin>12649287</cin><nom>ali</nom><prenom>homri</prenom><adresse_complet>snit thala</adresse_complet><mail>ali_homri@hotmail.fr</mail><sexe>M</sexe></client><client id="idclient3"><cin>12649287</cin><nom>ghaith</nom><prenom>homri</prenom><adresse_complet>snit thala</adresse_complet><mail>ghaith_homri@hotmail.fr</mail><sexe>M</sexe></client><client id="idclient4"><cin>123456789</cin><nom>Lankeu</nom><prenom>Arnold</prenom><adresse_complet>1 rue marcel paul</adresse_complet><mail>arnold@hotmail.fr</mail><sexe>M</sexe></client><client id="idclient5"><cin>12649287</cin><nom>khalil</nom><prenom>homri</prenom><adresse_complet>3 rue Marcel Paul</adresse_complet><mail>khalil.homri@utbm.fr</mail><sexe>M</sexe></client><client id="idclient6"><cin>12365478</cin><nom>dhia</nom><prenom>homri</prenom><adresse_complet>snit thala</adresse_complet><mail>dhia@hotmail.fr</mail><sexe>M</sexe></client><client id="idclient7"><cin>13215646</cin><nom>aaa</nom><prenom>aaa</prenom><adresse_complet>aaaaa</adresse_complet><mail>ali_homri@hotmail.fr</mail><sexe>M</sexe></client><client id="idclient8"><cin>13215646</cin><nom>aaa</nom><prenom>aaa</prenom><adresse_complet>aaaaa</adresse_complet><mail>ali_homri@hotmail.fr</mail><sexe>M</sexe></client><client id="idclient9"><cin>13215646</cin><nom>aaa</nom><prenom>aaa</prenom><adresse_complet>aaaaa</adresse_complet><mail>ali_homri@hotmail.fr</mail><sexe>M</sexe></client></clients>
 	<comptes>
 		<compte id="idclient1">
 			<pseudo>khomri</pseudo>
 			<password>tcf</password>
 			<mail>khalil@hotmail.fr</mail>
-			<img>rien</img>
+			<img>img/comptes/client_kha.png</img>
 		</compte>
-		<compte id="idclient1">
-			<pseudo>khomri</pseudo>
-			<password>tcf</password>
-			<mail>khalil@hotmail.fr</mail>
-			<img>rien</img>
-		</compte>
-	</comptes>
+	<compte id="idclient2"><pseudo>jalloul</pseudo><password>98501111</password><mail>ali_homri@hotmail.fr</mail><img>img/comptes/client_kha.png</img></compte><compte id="idclient3"><pseudo>ghaith</pseudo><password>98501111</password><mail>ghaith_homri@hotmail.fr</mail><img>img/comptes/client_kha.png</img></compte><compte id="idclient4"><pseudo>arnold</pseudo><password>123456</password><mail>arnold@hotmail.fr</mail><img>img/comptes/client_kha.png</img></compte><compte id="idclient5"><pseudo>Admin</pseudo><password>98501111</password><mail>khalil.homri@utbm.fr</mail><img>img/comptes/client_2.png</img></compte><compte id="idclient6"><pseudo>dhaw</pseudo><password>123</password><mail>dhia@hotmail.fr</mail><img>img/comptes/Client_2.3.png</img></compte><compte id="idclient9"><pseudo>aaa</pseudo><password>aaa</password><mail>ali_homri@hotmail.fr</mail><img>img/comptes/client_cinema.png</img></compte></comptes>
 	<reservations>
-		<reservation id="idreservation12" id_client="idclient1">
-			<id_cinema></id_cinema>
-			<titre_film></titre_film>
-			<date_diffusion></date_diffusion>
-			<heure></heure>
+		<reservation id="idreservation1">
+			<id_client/>
+			<id_cinema/>
+			<id_film/>
+			<date_diffusion/>
+			<heure/>
 		</reservation>
-	</reservations>
+	<reservation id="idreservation2"><id_client>idclient1</id_client><id_cinema>idcinema1</id_cinema><id_film>idcinema1idfilm1</id_film><date_diffusion>15/09/2016</date_diffusion><heure>18</heure></reservation><reservation id="idreservation3"><id_client>idclient1</id_client><id_cinema>idcinema1</id_cinema><id_film>idcinema1idfilm1</id_film><date_diffusion>30/05/2016</date_diffusion><heure>14</heure></reservation><reservation id="idreservation4"><id_client>idclient1</id_client><id_cinema>idcinema1</id_cinema><id_film>idcinema1idfilm1</id_film><date_diffusion>2016/02/20</date_diffusion><heure>14</heure></reservation><reservation id="idreservation5"><id_client>idclient1</id_client><id_cinema>idcinema1</id_cinema><id_film>idcinema1idfilm1</id_film><date_diffusion>2016/02/20</date_diffusion><heure>14</heure></reservation></reservations>
 </gestion>

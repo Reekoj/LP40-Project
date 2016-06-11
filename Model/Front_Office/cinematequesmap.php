@@ -17,4 +17,11 @@ function imgcinemateques() {
 	$liste = $xml->getElementsByTagName ( "img_path" );
 	return $liste;
 }
+function idcinemateques() {
+	$xml = new DomDocument ();
+	$xml->load ( 'xml/gestion.xml' );
+	$xpath = new DOMXPath ( $xml );
+	$liste = $xpath->query ( '//cinemas/cinema' );
+	return $liste;
+}
 ?>

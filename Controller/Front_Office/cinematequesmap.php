@@ -21,5 +21,12 @@ foreach ($liste as $l) {
 	$imgscinemas[$cpt]=[$l->nodeValue];
 	$cpt++;
 }
+$liste=idcinemateques();
+$idcinemas=[];
+$cpt = 0;
+foreach ( $liste as $l ) {
+	$idcinemas [$cpt] = $l->getAttribute ( "id" );
+	$cpt++;
+}
 require_once 'Vue/Front_Office/cinematequesmap.php';
 ?>

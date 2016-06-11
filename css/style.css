@@ -1,4 +1,48 @@
 @CHARSET "UTF-8";
+/*---- line color----*/
+.imgct {
+	width: 50px;
+	height: 50px;
+}
+hr {
+	color : #4CAF50;
+}
+/*-------enlever le soulignement-------*/
+a
+{ 
+ text-decoration:none; 
+} 
+/*------------------------------*/
+/*-----detail film inscrire ou se connecter pour reserver------*/
+.reservealarm{
+	background-color: red;
+}
+/*----------weather debut*/
+.contaside {
+	margin: 10px;
+	padding: 5px;
+	width: 30%;
+	height: 100%;
+	float: left;
+	border : solid #4CAF50;
+	border-width: 2px;
+}
+
+.meteoicon img {
+	width: 100px;
+}
+
+#tabmeteo {
+	background-color: rgba(195, 195, 195, 0.2);
+	margin: 10px;
+	text-align: center;
+}
+/*--------weather Fin-----------*/
+/*------------profil client-------------*/
+.infocli{
+background-color: #4CAF50;
+}
+/*---------------fin profil client---------------*/
 /*--------------Debut Dynamique map--------------*/
 #cheader2{
     background-color: rgba(255, 255, 255,1);
@@ -9,18 +53,70 @@
 #corps{
     margin: auto;
     min-height: 600px;
-    border-radius: 50px;
+   /* border-radius: 50px;*/
 }
 /*--------------Fin Dynamique map--------------*/
+/*--------------Debut map image et det un film en front---------------*/
+.affich-imgcinema{
+/* display: inline-block;*/
+float:left;
+width:48%; /*760px;*/
+height:350px; 
+/*border:3px solid blue;
+border-radius:5px;*/
+margin-top:5px;
+margin-left:5px;
+}
+.carte-cinema{
+float:right;
+width:48%; /*760px;*/
+height: 347px; 
+border: 3px solid #4CAF50;
+border-radius: 5px;
+margin-top:5px;
+margin-right:5px;
+}
+.affich-imgfilm{
+/* display: inline-block;*/
+float:left;
+width:48%; /*760px;*/
+height:350px; 
+/*border:3px solid blue;
+border-radius:5px;*/
+margin-top:5px;
+margin-left:5px;
+
+}
+.affich-det-film{
+float:right;
+width:48%; /*760px;*/
+/*height: 347px; */
+border-radius: 5px;
+margin-top:5px;
+margin-right:5px;
+}
+.affiche-det-cinema{
+float:left;
+width:300px;
+height: 75px; 
+margin-top:3px;
+margin-left:5px;
+margin-bottom:13px;
+}
+/*----------------Fin map image--------------*/
 /*--------------Debut Twitter hashtag--------------*/
 #twitteraside {
 	margin: 10px;
 	padding: 5px;
 	width: 30%;
-	height: 400px;
+	height: 546px;
 	float: left;
-	border: solid rgba(0, 0, 0, 0.2);
-	
+	border: solid #4CAF50; /*rgba(0, 0, 0, 0.2);*/
+	border-width: 2px;
+}
+
+.tweethead{
+	background-color: #4CAF50;
 }
 #twitterdiv {
 	width: 100%;
@@ -39,3 +135,386 @@ a:link, a:visited {
     color: blue;
 }
 /*--------------Fin Twitter hashtag--------------*/
+/*------------------------------------------------------Le pop up Se connecter/ contacter-nous ---------------------------------------------------------------*/  
+        .obox{
+        background-color: rgba(0, 0, 0, 0.7);
+        display:none;
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        height:100%;
+    }
+
+    .popup{
+        background: #fff;
+        display: none; 
+        width: 30%;
+        height: 30%;
+        padding: 20px;
+        border: 30px solid #4CAF50;
+        float: left;
+        position: absolute;
+        left:35%;
+        top: 35%;
+        z-index: 99999;
+        -webkit-box-shadow: 0px 0px 20px #000;
+        -moz-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        }
+.inputtext{
+    width: 100%;
+}
+
+  /*  #auth{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+
+    } */
+    
+    .auth table{
+        margin:auto;
+        width: 80%;
+        padding: 5%;
+       
+
+        }  
+    .auth -> table -> tr -> th{
+        padding:10px;
+        color: rgb(163, 132, 88);
+        text-align: center;
+    }
+
+    .auth .btn{
+        float: right;
+        padding: 4%;
+    }
+
+    #contactN{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    } 
+     #contactN table{
+        margin:auto;
+        width: 80%;
+        padding: 5%;
+    }
+    #contactN table th{
+        padding:10px;
+    }
+    
+ 
+    /**************Formulaire s'inscrire-----------------*/
+.popup2{
+        background: #fff;
+        display: none; 
+       
+        border: 30px solid #4CAF50;
+       padding-left: 10%;
+       padding-right: 10%;
+       /*font-size: 1.2em;*/
+       position: absolute;
+        left:27%;
+        top: 3%;
+        z-index: 99999;
+        -webkit-box-shadow: 0px 0px 20px #000;
+        -moz-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        }
+.form-style-1 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+    width: 49%;
+        display: inherit;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.form-style-1 .required{
+    color:red;
+}
+/**************Ajout Cinema Film********************************************************************************************/
+#ajoutcinema {
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    padding: 30px;
+    /* padding-top: 60px; */
+    /* padding-bottom: 60px; */
+    background-color: #4CAF50;
+   /* border-radius: 80px;*/
+    margin: 0% 15%15% 15%;
+    overflow: scroll;
+}
+#ajoutfilm {
+    position: relative;
+    width: 90%;
+    height: 540px;
+    padding: 30px;
+    /* padding-top: 60px; */
+    /* padding-bottom: 60px; */
+    background-color: #4CAF50;
+   /* border-radius: 80px;*/
+   /* margin: 0% 15%15% 15%;*/
+    overflow: scroll;
+}
+#corps {
+	padding: 30px;
+	background-color: #4CAF50;
+    /*margin: auto;*/
+    min-height: 450px;
+    height: 100%;
+   /*border-radius: 50px; */
+}
+#cheader1 {
+    background-color: transparent;
+  /* border-radius: 50px;*/
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+
+form {
+        position: center;
+        width: 100%;
+        height: 100%;
+}
+
+.formline{
+    float: left;
+    clear: left;
+    margin-top: 5px;
+}
+
+.formline div{
+    float: left;
+}
+
+.formline input[type="text"]{
+    /* background-color: #303030; */
+    margin-left: 10px;
+    border-radius: 20px;
+    /* color: #ffcc99; */
+    border-style: none;
+    /* -webkit-box-shadow: inset 0 0 10px #000; */
+    -moz-box-shadow: inset 0 0 10px #000;
+    /* box-shadow: inset 0 0 10px #000; */
+    margin-top: 10px;
+
+}
+
+.formline input[type="int"]{
+     /* background-color: #303030; */
+    margin-left: 10px;
+    border-radius: 20px;
+    /* color: #ffcc99; */
+    border-style: none;
+    /* -webkit-box-shadow: inset 0 0 10px #000; */
+    -moz-box-shadow: inset 0 0 10px #000;
+    /* box-shadow: inset 0 0 10px #000; */
+    margin-top: 10px;
+
+}
+
+#submit {
+    width: 100px;
+    font-size: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    color: #ff471a;
+    text-shadow: 2px 2px 5px black;
+    border-style: none;
+}
+.subv{
+     padding-left: 40%;
+    padding-top: 6%;
+
+}  
+/*******************************************************--------Images------*********************************/
+.imgv,.imgv2{
+    border-radius: 30px;
+}
+.imgv{
+    height: 30%;
+    display: inline-block;
+    width: 30%;
+    margin: 19px 0px 5px 19px;
+}
+.imgv3{
+    display: inline-block;
+    width: 100%;
+}
+.imgv2{
+    height: 50%;
+    width: 480px;
+    float: left;
+    margin-top: 15%;
+}
+.btn{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: rgba(108, 85, 53, 0.6);
+    background-image: linear-gradient(to bottom, #BA9867, #624C2E);
+    background-repeat: repeat-x;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    padding: 1% 4%;
+    margin-top: 0.1%;
+    margin-right: 10%;
+}
+.btnd{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    border-color: red;
+    padding: 1% 4%;
+    margin-top: 0.1%;
+    margin-right: 10%;
+}
+#btnreserver{
+    margin-top: 0.1%;
+    float: right;
+    margin-right: 10%;
+    padding: 1% 4%;
+}
+
+/****************-table cinemas films******************************************************************************/
+.tablev{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #DDD;
+    width: 100%;
+    background-color:#4CAF50;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    vertical-align: top;
+    display: table;
+    top: 50px;
+    /*border-radius: 11px;*/
+    border: 1px solid #ddd;
+
+}
+.tablev th, .tablev td {
+    /*padding: 8px;*/
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+     border-collapse: collapse;
+}
+.tablev thead td, .tablev thead#tt th {
+   background:black;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.tablev tbody tr:nth-child(n) td {
+    background: rgba(245, 245, 245, 0.6);
+}
+.middle .button {
+    width: 108px;
+    height: 108px;
+    margin: 10px 15px 15px 45%;
+    position: relative;
+    background-color:  #4CAF50;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, rgba(242, 150, 50, 0.58) 0%,#FAFAFA 100%);
+    box-shadow:  0px 3px 4px rgba(245, 245, 245, 0.6),inset 0px 1px 3px rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    }
+.ajt{
+        background-position: -704px -576px;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icones/icons_g.png);
+    background-repeat: no-repeat;
+}
+.middle .button > a span {
+    display: inline-block;
+    text-align: center;
+}
+.middle .button > a span[class^='ajt'] {
+    margin: 10px 0px 0px;
+}

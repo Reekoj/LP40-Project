@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!ELEMENT gestion (cinemas,clients,comptes,reservations)>
 	<!ELEMENT cinemas (cinema)+>
-		<!ELEMENT cinema (id,nom_cinema,adresse,localisation,latlng,img_path,films) >
-			<!ATTLIST cinema>
-			<!ELEMENT id (#PCDATA)>
+		<!ELEMENT cinema (nom_cinema,adresse,localisation,latlng,img_path,films?)>
+			<!ATTLIST cinema id ID #REQUIRED>
 			<!ELEMENT nom_cinema (#PCDATA)>
 			<!ELEMENT adresse (numero?,rue?,cp,ville)>
 				<!ELEMENT numero (#PCDATA)>
@@ -15,18 +14,18 @@
 				<!ELEMENT lat (#PCDATA)>
 				<!ELEMENT lng (#PCDATA)>
 			<!ELEMENT img_path (#PCDATA)>
-			<!ELEMENT films (film)+>
-				<!ELEMENT film (titre,realisateur,genre,acteurs,note,commentaires,duree,photo,seances)>
+			<!ELEMENT films (film)*>
+				<!ELEMENT film (titre,realisateur,genre,acteurs,note,duree,photo,date_sortie,seances)>
+					<!ATTLIST film id ID #REQUIRED>
 					<!ELEMENT titre (#PCDATA)>
 					<!ELEMENT realisateur (#PCDATA)>
 					<!ELEMENT genre (#PCDATA)>
 					<!ELEMENT acteurs (acteur)+>
 						<!ELEMENT acteur (#PCDATA)>
 					<!ELEMENT note (#PCDATA)>
-					<!ELEMENT commentaires (commentaire)>
-						<!ELEMENT commentaire (#PCDATA)>
 					<!ELEMENT duree (#PCDATA)>
 					<!ELEMENT photo (#PCDATA)>
+					<!ELEMENT date_sortie (#PCDATA)>
 					<!ELEMENT seances (seance)+>
 						<!ELEMENT seance (date,heureDebut,nbplaces)>
 							<!ELEMENT date (#PCDATA)>
@@ -49,10 +48,10 @@
 			<!ELEMENT mail_client (#PCDATA)>
 			<!ELEMENT img (#PCDATA)> 
 	<!ELEMENT reservations (reservation)*>
-		<!ELEMENT reservation (id_cinema,titre_film,date_diffusion,heure)>
+		<!ELEMENT reservation (id_client,id_cinema,id_film,date_diffusion,heure)>
 			<!ATTLIST reservation id CDATA #REQUIRED>
-			<!ATTLIST reservation id_client IDREF #REQUIRED>
+			<!ELEMENT id_client (#PCDATA)>
 			<!ELEMENT id_cinema (#PCDATA)>
-			<!ELEMENT titre_film (#PCDATA)>
+			<!ELEMENT id_film (#PCDATA)>
 			<!ELEMENT date_diffusion (#PCDATA)>
 			<!ELEMENT heure (#PCDATA)>
